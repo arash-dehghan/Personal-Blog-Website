@@ -1,0 +1,346 @@
+body {
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+header{
+    padding-bottom: 0px;
+    border-bottom: 1px solid black;
+    background: gold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    color: black;
+    float: left;
+    font-size: 30px;
+    font-family: Snell Roundhand, cursive;
+    margin: 0px;
+    padding: 3px 10px;
+}
+
+nav{
+    float: right;
+    padding: 0px 10px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    margin-right: 10px;
+    position: relative;
+}
+
+nav a{
+    color: black; 
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: black;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+
+  background-color: black;
+  color: gold;
+}
+
+.facebook {
+  background: gold;
+  color: black;
+}
+
+.twitter {
+  background: gold;
+  color: black;
+}
+
+.instagram {
+  background: gold;
+  color: black;
+}
+
+.linkedin {
+  background-color: gold;
+  color: black;
+}
+
+.github {
+  background: gold;
+  color: black;
+}
+
+.Welcoming{
+    color: Gold;
+    background-color: #323232;
+    /* background-color: black; */
+    border-bottom: 2px solid white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;   
+    text-align: center;
+    line-height: 90px;
+    height: 70px;
+
+}
+
+.featured{
+  font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  border-bottom: double 3px gold;
+}
+
+.movingfeatured{
+  position: relative;
+  top: -20px;
+}
+
+.maincontent{
+  bottom: 53.5px;
+  padding-bottom: 20px;
+  padding-top: 1px;
+  background-color: #F8F8F8;
+  color: black;
+  text-align: center;
+  width: 75%;
+  align-content: center;
+  margin: auto;
+  border: 2px solid #F8F8F8;
+}
+
+.maincontentaboutpage{
+  bottom: 53.5px;
+  padding-bottom: 20px;
+  padding-top: 1px;
+  background-color: #F8F8F8;
+  color: black;
+  text-align: center;
+  width: 75%;
+  text-align: left;
+  align-content: left;
+  margin: auto;
+  background-blend-mode: lighten;
+
+}
+
+.aboutborder{
+  /* border: 2px solid gold; */
+  padding: 5px;
+}
+
+
+.maincontentaboutpage img{
+  position: relative;
+  float: right;
+  top: 20px;
+}
+
+.maincontentaboutpage p{
+  text-align: justify;
+  font: italic bold 12px/30px Georgia, serif;
+}
+
+.aboutmedescription{
+  text-align: justify;
+}
+
+.maincontent img{
+  border: 2px solid gold;
+  height: 250px;
+  object-fit: cover;
+}
+
+.albumtitles{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  letter-spacing: -3;
+  text-shadow: #989898 1px 2px 0;
+  left:10px;
+  top: 5px;
+  text-align: left;
+}
+
+.aboutmetitle{
+  position: relative;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  letter-spacing: -3;
+  text-shadow: #989898 1px 2px 0;
+}
+
+.tvtitles{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  letter-spacing: -3;
+  text-shadow: #989898 1px 2px 0;
+  left:10px;
+  /* bottom: 70px;*/
+  text-align: left;
+}
+
+.BringItBackHover:hover .BringItBack {
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+
+.BringItBackHover:hover .pleasemoveB{
+  opacity: 1;
+}
+
+.pleasemoveB{
+  position: relative;
+  bottom: 140px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pleasemoveB a{
+  text-decoration: none;
+}
+
+
+.NashvilleHover:hover .Nashville {
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+
+.NashvilleHover:hover .pleasemoveN{
+  opacity: 1;
+}
+
+.pleasemoveN{
+  position: relative;
+  bottom: 140px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pleasemoveN a{
+  text-decoration: none;
+}
+
+.Highway61Hover:hover .Highway61 {
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+
+.Highway61Hover:hover .pleasemoveH{
+  opacity: 1;
+}
+
+.pleasemoveH{
+  position: relative;
+  bottom: 140px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pleasemoveH a{
+  text-decoration: none;
+}
+
+.stings{
+  color: black;
+  font-weight: bold;
+  background-color: gold;
+  padding:15px;
+  border: 2px solid black;
+  font-size: 16px
+}
+
+.albumnames{
+  position: relative;
+  bottom: 66px;
+
+}
+
+.albumnametext{
+  background-color: gold;
+  border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    }
+
+.column{
+    flex: 33.33%;
+    padding: 10px;
+}
+
+footer{
+  position: relative;
+  text-align: center;
+  background-color: gold;
+  padding: 3px;
+  border-top: 1px solid black;
+
+}

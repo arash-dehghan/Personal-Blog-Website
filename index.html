@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- -->
+<html>
+<head>
+	<!-- The link tag is used to reference external style sheets/resources. The 'rel' attribute in it specified the relationship between the current documentand the linked document. The type defines what type of file we're referencing and the 'href' defines the name of the file we are referencing/using -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<!-- The 'meta' tage provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata. The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
+	<meta charset = "UTF-8">
+	<!-- The 'title' tag is the name of the website that shows on the browsers tab.-->
+	<title>Dehghan Blogs</title>
+</head>
+<body>
+	<header>
+	<!-- The 'header' tag/element represents a container for introductory content or a set of navigational links. Usually don't want to have links that go to different websites (Ex: Twitter, etc.) in the 'header' tag. More for internal links. I'm using it for my navigation bar on this website. -->
+		<div class = "container">
+		<!--The <div> tag defines a division or a section in an HTML document. Web developers use <div> elements to group together HTML elements and apply CSS styles to many elements at once. For instance, by wrapping a set of paragraph elements into a <div> element, the developer can take advantage of CSS styles and apply a font to all paragraphs at once by applying a font style to the <div> tag instead of coding the same style for each paragraph element. -->
+		<!--You should uses classes instead of id's when you want to apply certain style to multiple HTML elements. For example, lets say you have a <div class = "boldandcolorred"> which using CSS makes everything in the class bold and having a font colour of red, then anytime you assign any paragprah or anything inside this div to this class, it will automatically be set to those styles we originally set. However, ID's on the other hand are unique. Meaning that you should set a unique ID for every element on your page. Each ID has unqiue stylings set specifically for that element. Important to note that it is important for JavaScript which one you use, so use them appropriately. Check out this website for more information https://css-tricks.com/the-difference-between-id-and-class/  -->
+		<!--Next I am defining our logo class, where we are giving it certain stylings in our header/navigation bar. I'm using a class here since we might want to use our logo multiple times throughout the site eventually. -->
+		<h1 class ="logo">AD</h1>
+			<!--Now we're moving into the navigation bar. We use the "nav" tag, which is used to define a set of navigation links. Not ALL links of a document should be placed in a nav tag. The <nav> element is intended only for major block of navigation links -->
+			<nav>
+				<ul>
+					<!--Making an unordered list for our navigation bar. Lists are primarily used for making navigation bars. Here we have three items. The "href" refers to the location the link will take you to once clicked. The class of "fa fa..." is one of the links we're using at the beginning, which imports icons to place next to our links. Recall that the <a> tag defines a hyperlink. -->
+					<li><a href = "index.html"><i class="fa fa-home"></i> Home </a></li>
+					<li><a href = "aboutme.html"><i class="fa fa-user"></i> About Me </a></li>
+				</ul>
+		    </nav>
+	    </div>
+    </header>
+	<!-- The social media icon bar -->
+	<div class="icon-bar">
+  		<a href="https://www.facebook.com/johnmayer/?ref=br_rs" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+  		<a href="https://twitter.com/johnmayer?lang=en" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
+  		<a href="https://www.instagram.com/johnmayer/?hl=en" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+  		<a href="https://www.linkedin.com/in/arash-dehghan-234071138/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  		<a href="https://github.com/arash-dehghan" target="_blank" class="github"><i class="fa fa-github"></i></a> 
+	</div>
+	<div>
+		<h1 class="Welcoming">Home</h1>
+	</div>
+	<div class="maincontent">
+		<div class="movingfeatured">
+			<h1 class = "featured">Dehghan Blogs</h1>
+		</div>
+		<div class="albumtitles">
+			<h1>Album Reviews</h1>
+		</div>
+		<div class="row">
+  			<div class="column">
+  				<div class = "BringItBackHover">
+    				<img src="AbbeyRoad.jpg" alt="Fjords" class = "BringItBack" style="width:100%">
+    			    <div class="pleasemoveB">
+    					<a href="#" class = "stings" style = "width: 40%">Read Review</a>
+    				</div>
+    			    <div class="albumnames">
+    					<h4 class= "albumnametext" style = "width: 60%">Abbey Road | The Beatles</h4>
+    				</div>
+    			</div>
+  			</div>
+  			<div class="column">
+  				<div class = "NashvilleHover">
+    				<img src="Nashville.jpg" alt="Forest" class = "Nashville" style="width:100%">
+    			    <div class="pleasemoveN">
+    					<a href="#" class = "stings" style = "width: 40%">Read Review</a>
+    				</div>
+    		    	<div class="albumnames">
+    					<h4 class= "albumnametext" style = "width: 60%">Nashville Skyline | Bob Dylan</h4>
+    				</div>
+    			</div>
+  			</div>
+  			<div class="column">
+  				<div class = "Highway61Hover">
+    				<img src="Ye.jpg" alt="Mountains" class = "Highway61" style="width:100%">
+    				<div class="pleasemoveH">
+    					<a href="#" class = "stings" style = "width: 40%">Read Review</a>
+    				</div>
+    				<div class="albumnames">
+    					<h4 class= "albumnametext" style = "width: 60%">Ye | Kanye West</h4>
+    				</div>
+    			</div>
+  			</div>
+  		</div>
+  		<div class="tvtitles">
+			<h1>TV Show Reviews</h1>
+		</div>
+		<div class="row">
+  			<div class="column">
+  				<div class = "BringItBackHover">
+    				<img src="MadMen.jpg" alt="Fjords" class = "BringItBack" style="width:100%">
+    			    <div class="pleasemoveB">
+    					<a href="#" class = "stings" style = "width: 40%">Read Review</a>
+    				</div>
+    			    <div class="albumnames">
+    					<h4 class= "albumnametext" style = "width: 60%">Mad Men</h4>
+    				</div>
+    			</div>
+  			</div>
+  			<div class="column">
+  				<div class = "NashvilleHover">
+    				<img src="PeakyBlinders.jpg" alt="Forest" class = "Nashville" style="width:100%">
+    			    <div class="pleasemoveN">
+    					<a href="#" class = "stings" style = "width: 40%">Read Review</a>
+    				</div>
+    		    	<div class="albumnames">
+    					<h4 class= "albumnametext" style = "width: 60%">Peaky Blinders</h4>
+    				</div>
+    			</div>
+  			</div>
+  		</div>
+  		<div class="tvtitles">
+			<h1>Think Pieces</h1>
+		</div>
+  		<div class="row">
+  			<div class="column">
+  				<div class = "BringItBackHover">
+    				<img src="Election.jpg" alt="Fjords" class = "BringItBack" style="width:100%">
+    			    <div class="pleasemoveB">
+    					<a href="#" class = "stings" style = "width: 40%">Read Article</a>
+    				</div>
+    			    <div class="albumnames">
+    					<h4 class= "albumnametext" style = "width: 60%">What the 2016 Election Taught Us</h4>
+    				</div>
+    			</div>
+  			</div>
+  		</div>
+  </div>
+</body>
+<footer>
+	<p>&#169 Dehghan Blogs 2018. All rights reserved.</p>
+</footer>
+</html>
